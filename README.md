@@ -1,3 +1,5 @@
-windows tasks automation using PowerShell
+# Contents:
 
-This is my PowerShell repository to keep my day today activities that i perform on windows OS.
+* PowerShell Scripts
+
+* windows tasks automation using PowerShell
