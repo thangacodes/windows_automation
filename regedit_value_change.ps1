@@ -29,6 +29,10 @@ regedit
 
 Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\' -Name FeatureSettingsOverride -Value 8
 
+Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\'
+
+Start-Sleep 8
+
 regedit
 
 exit 
