@@ -2,7 +2,7 @@
 # Name: Registry Editor file adding and existing value changes               #
 # Date: 25/10/2022                                                           #
 # Author: Thangadurai.Murugan                                                #
-# Note: Execute this script Run as Administrator in PowerShell               #
+# Note: Open PowerShell RUN as Administrator and then execute this           #
 ##############################################################################
 
 Write-Host "Script is to Modify registry using PowerShell cmdlet" -f Cyan -BackgroundColor Red
