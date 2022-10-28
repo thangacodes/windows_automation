@@ -1,0 +1,49 @@
+# The following Git commands should be used by our IT engineers their day today activities.
+
+$ git config --global user.name "Thangadurai Murugan"
+$ git config --global user.email thangadurai.murugan@example.com
+
+# To list out git config
+$ git config --list 
+
+Create a custom or child branch under Master branch
+$ git checkout -b my_test_branch         // Create a branch and switchover to it automatically.
+$ git checkout my_test_branch            // This is simply create a custom branch.
+$ git status                             // To check the status, where you are in whether master/child branch.
+
+# Once you switch over to the custom branch from master
+$ git pull --all                         // It downloads all of the changes made across all branches to your local machine.
+
+To see local branches, run this command:
+$  git branch
+To see remote branches, run this command:
+$  git branch -r
+To see all local and remote branches, run this command:
+$  git branch -a
+
+$ git status //very useful/powerful command in any of the situation
+$ git add filename 
+$ git commit -m "leave the message of the commit"
+$ git commit -am "commit message"        // This combination immediately creates a commit of all the staged changes and takes an inline commit message.
+$ git push origin my_test_branch         // It will ask you to enter user.name and password. Feel free to provide it, 
+
+## Note: User name should be "SG0307269" and Password should be bank Id password.
+
+Go to GitHub Enterprise UI to check the status. You may find out pull/merge should be exist with my_test_branch name should be exist.
+
+Go ahead and do Pull request and provide the reason to merge with Master branch. Click on Reviewer, where you may find shiju, sunny and others...
+
+### Troubleshooting commands:
+$ git status
+$ git log
+$ git log --oneline                          // To see the list of commits.
+$ git log --author=sg0307269 --oneline      // These are all the commits done by sg0307269
+$ git show 
+$ git show commit Id                      // Example: git show ab35d03c8f4f238fd94f0ec3abd533dbe0b5a352
+$ git log --log-size                     // view log size and git history
+
+
+
+
+
+
