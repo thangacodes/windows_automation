@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import time
 a ="Extracting ssh_key from ssm-parameter_store"
 print(a.upper())
