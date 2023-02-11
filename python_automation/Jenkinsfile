@@ -21,8 +21,7 @@ pipeline {
 			sh '''
 			   cd python_automation
 			   python --version
-			   chmod a+x uppercase.py
-			   py uppercase.py
+			   ./uppercase.py
 			   '''
             }
     }
