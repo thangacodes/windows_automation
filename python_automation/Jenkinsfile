@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    stages{
+    stage("Are we good to deploy? Say yes or no?"){
+        input{
+           message "Should we deploy the project?"
+             }
+	    steps{
+	      echo 'India is my country!'
+	    }
+	}
+    stage('Build') {
+        steps {
+            echo 'Building..'
+			sh '''
+			   cd python_automation
+			   py uppercase.py
+            }
+    }
+    stage('Test'){
+        steps {
+            echo 'Testing..'
+            }
+    }
+    stage('Deploy') {
+        steps {
+            echo 'Deploying....'
+            }
+    }
+	stage('Workspace CleanUp'){
+		steps{
+			sh '''
+			    echo "Cleaning the Jenkins workspace"
+			'''
+			cleanWs()
+            }
+		}
+	}
+}
