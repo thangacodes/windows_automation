@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages{
-	stage('Clone the Repo'){
-       steps{
-       echo "Code cloning in progress"
-       git branch: 'main', url: 'https://github.com/send2durai/windows_automation.git'
-     }
-    }
+	   stage('Clone the Repo'){
+          steps{
+               echo "Code cloning in progress"
+               git branch: 'main', url: 'https://github.com/send2durai/windows_automation.git'
+            }
+        }
     stage("Are we good to deploy? Say yes or no?"){
         input{
-           message "Should we deploy the project?"
+           message "Should we start the Job?"
              }
 	    steps{
 	      echo 'India is my country!'
@@ -37,7 +37,7 @@ pipeline {
 		steps{
 			sh '''
 			    echo "Cleaning the Jenkins workspace"
-			'''
+			   '''
 			cleanWs()
             }
 		}
