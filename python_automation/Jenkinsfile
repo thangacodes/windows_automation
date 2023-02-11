@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages{
+	stage('Clone the Repo'){
+       steps{
+       echo "Code cloning in progress"
+       git branch: 'main', url: 'https://github.com/send2durai/windows_automation.git'
+     }
+    }
     stage("Are we good to deploy? Say yes or no?"){
         input{
            message "Should we deploy the project?"
