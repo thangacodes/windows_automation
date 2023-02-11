@@ -21,7 +21,7 @@ pipeline {
 			sh '''
 			   cd python_automation
 			   python --version
-			   sudo sh uppercase.py
+			   ./uppercase.py
 			   '''
             }
     }
