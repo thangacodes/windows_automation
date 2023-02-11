@@ -20,7 +20,9 @@ pipeline {
             echo 'Building..'
 			sh '''
 			   cd python_automation
+			   python --version
 			   py uppercase.py
+			   '''
             }
     }
     stage('Test'){
