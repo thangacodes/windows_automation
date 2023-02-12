@@ -20,11 +20,12 @@ pipeline {
             echo 'Building..'
 			sh '''
 			   cd python_automation
+			   ls -ltrh
 			   python --version
 			   ./uppercase.py
 			   '''
-            }
-    }
+                          }
+                       }
     stage('Test'){
         steps {
             echo 'Testing..'
