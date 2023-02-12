@@ -22,7 +22,7 @@ pipeline {
 			   cd python_automation
 			   ls -ltrh
 			   python --version
-			   py uppercase.py
+// 			   py uppercase.py
 			   '''
                           }
                        }
