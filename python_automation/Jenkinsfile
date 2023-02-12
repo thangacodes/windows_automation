@@ -23,8 +23,8 @@ pipeline {
 			   ls -ltrh
 			   python --version
 			   '''
-                          }
-                       }
+            }
+    }
     stage('Test'){
         steps {
             echo 'Testing..'
