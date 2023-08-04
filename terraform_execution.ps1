@@ -15,16 +15,21 @@ write-host -f Black -b Red "You've entered input is:" $input
 
 if($input -eq "tfi"){
 write-host "$tfi in progress.." -ForegroundColor Red -b Black
+$tfi
 }
 elseif($input -eq "tft"){
 Write-Host "$tft in progress.."
+$tft
 }
 elseif($input -eq "tfv"){
 Write-Host "$tfv in progress.."
+$tfv
 }
 elseif($input -eq "tfa"){
 Write-Host "$tfa in progress.."
+$tfa
 }
 else {
 Write-Host "$tfd in progress.."
+$tfd
 }
