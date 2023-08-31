@@ -1,0 +1,24 @@
+###########################################################################
+# Script: Service status checking and variable datatype checking          #
+# Author: Thangadurai.Murugan                                             #
+# CreationDate: 31-08-2023                                                #
+###########################################################################
+$date = Get-Date
+Write-Host "checking variable $date datatype is:"
+$date.GetType()
+## Variable declaration
+$Name = "CWAUpdaterService"
+Write-Host "checking variable $Name datatype is:"
+$Name.GetType()
+
+Write-Host "Service that you wanted to check on windows client is:" $Name
+
+$service = Get-Service -Name $Name -ErrorAction SilentlyContinue
+ 
+if ($service.Status -eq "Running") {
+    Write-Host "$Name is Running..."
+} elseif ($service.Status -eq "Paused") {
+    Write-Host "Paused..."
+} else {
+    Write-Host "Stopped..."
+}
