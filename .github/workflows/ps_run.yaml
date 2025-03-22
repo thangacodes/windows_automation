@@ -12,11 +12,4 @@ jobs:
       - name: Run PowerShell Script
         run: |
             write-host "PowerShell script invoked and is being executed..."
-            try {
-              .\windows_automation\data_type_finding.ps1
-            }
-            catch {
-              write-host "An error occurred: $_"
-              exit 1  # Ensure the job fails on error
-            }
-        shell: pwsh  # Use PowerShell Core (pwsh)
+            write-host "GitHub action uses for Windows 2022 image.."
