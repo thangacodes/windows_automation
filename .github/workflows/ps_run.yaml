@@ -1,0 +1,16 @@
+name: PowerShell Script Execution on Windows Runner
+on:
+  workflow_dispatch
+jobs:
+  run-powershell-script:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up PowerShell
+        uses: actions/setup-powershell@v1  
+      - name: Run PowerShell Script
+        run: |
+          write-host "PowerShell script invoked and get executed as well..."
+          .\windows_automation\data_type_finding.ps1
+        shell: pwsh  # Use PowerShell Core (pwsh)
