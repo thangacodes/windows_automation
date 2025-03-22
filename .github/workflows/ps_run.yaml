@@ -8,7 +8,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Set up PowerShell
-        uses: actions/setup-powershell@v2
+        uses: actions/setup-powershell@v1
       - name: Run PowerShell Script
         run: |
             write-host "PowerShell script invoked and is being executed..."
