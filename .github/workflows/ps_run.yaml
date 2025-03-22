@@ -10,7 +10,7 @@ jobs:
       - name: Set up PowerShell
         uses: actions/setup-powershell@v2
       - name: Run PowerShell Script
-          run: |
+        run: |
             write-host "PowerShell script invoked and is being executed..."
             try {
               .\windows_automation\data_type_finding.ps1
@@ -19,4 +19,4 @@ jobs:
               write-host "An error occurred: $_"
               exit 1  # Ensure the job fails on error
             }
-          shell: pwsh  # Use PowerShell Core (pwsh)
+        shell: pwsh  # Use PowerShell Core (pwsh)
